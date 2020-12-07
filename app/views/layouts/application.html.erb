@@ -39,8 +39,8 @@
                   edit_user_registration_path, title: 'Edit Profile' %>
                 </li>
                 <li class="col-md-4 logout">
-                <%= link_to('<i class="fa fa-sign-out"></i> Logout'.html_safe,destroy_user_session_path,
-                class: 'btn btn-xs btn-danger', title: 'Logout', method: :delete) %></li>
+                <%= link_to('<i class="fa fa-sign-out"></i> Logout'.html_safe, destroy_user_session_path,
+                class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
               <% else %>
                 <li class="col-md-4 login right">
                   <%= link_to('<i class="fa fa-sign-in"></i> Sign In'.html_safe, new_user_session_path, 
